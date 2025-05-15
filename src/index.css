@@ -1,0 +1,28 @@
+
+*{
+  margin: 0;
+  padding: 0; 
+   box-sizing: border-box;   
+   font-family: "Nunito", serif;
+   /* overflow-y: hidden; */
+   
+ }
+ 
+ /* Light theme is default (Bootstrap base) */
+ 
+ body.dark-mode {
+   background-color: #121212 !important;
+   color: #f1f1f1 !important;
+ }
+ 
+ .dark-mode .header-container {
+   background-color: #1f1f1f;
+   color: white;
+ }
+ 
+ .dark-mode .header-logo button {
+   background-color: rgba(255, 255, 255, 0.1);
+   color: white;
+ }
+ 
+ 

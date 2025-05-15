@@ -1,0 +1,13 @@
+.open-live-account-container{ 
+    background: #e5e7eb;
+    width: 100%;
+    /* padding: 80px 30px; */
+    margin-top: 20px;
+    height: auto;
+   
+    display: flex;
+    flex-direction: row;
+    /* height: 100vh; */
+
+
+}

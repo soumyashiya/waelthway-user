@@ -1,0 +1,55 @@
+.account-list-wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    /* width: 100%; */
+}
+.account-card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    background: white;
+    padding: 10px 24px;
+    border-radius: 8px;
+    /* width: 100%; */
+    box-sizing: border-box;
+    border: 0 solid #e5e7eb;
+    width: 550px;
+    height: 250px;
+}
+.account-card-container h2{
+    font-size: 15px;
+}
+.account-card-container h3{
+    display: block;
+    font-size: 14px;
+    unicode-bidi: isolate;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.account-card-container p{
+    font-size: 12px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.account-card-container .btn-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.account-card-container button {
+    background: linear-gradient(45deg, #32cd32, #00b300, #007f00);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    width: 120px;
+    height: 40px;
+    white-space: nowrap;
+    
+  }
+  

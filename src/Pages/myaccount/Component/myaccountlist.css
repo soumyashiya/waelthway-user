@@ -1,0 +1,231 @@
+.user-list-main{
+    /* height: 100vh; */
+    background: #e5e7eb;
+    width: 100%;
+    padding: 80px 30px;
+    margin-top: 20px;
+    height: 100vh;
+   
+
+
+}
+.user-list-main h1{
+    /* font-size: 30px; */
+    /* font-size: clamp(18px, 4vw, 30px); */
+    font-size: 30px;
+    color: #32cd32;
+    @media screen and (max-width: 768px) {
+        font-size: 28px;
+        
+    }
+
+}
+.userlist-container{
+    background: white;
+    border-radius: 8px;
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    padding: 20px;
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        padding: 10px; /* Adjust padding for smaller screens */
+        
+    }
+    
+}
+.user-list-btn button {
+    background: linear-gradient(45deg, #32cd32, #00b300, #007f00);
+    color: #fff;
+    border: none;
+    font-size: 14px; /* Reduce font size */
+    font-weight: 600; /* Slightly reduce weight for a sleek look */
+    border-radius: 6px; /* Reduce border radius */
+    box-shadow: 0 2px 6px rgba(0, 128, 0, 0.3); /* Lighter shadow */
+    transition: background 0.3s ease, transform 0.2s ease;
+    padding: 6px 12px; /* Reduce padding */
+    height: 36px; /* Set a fixed height */
+    width: fit-content; /* Ensures buttons don't stretch */
+    min-width: 100px; /* Keeps buttons uniform */
+    max-width: 160px; /* Avoids excessive width */
+    display: flex;
+    align-items: center; /* Centers text and icon */
+    gap: 6px; /* Adds space between icon and text */
+    @media screen and (max-width: 768px) {
+        font-size: 12px; /* Further reduce font size for mobile */
+        padding: 4px 8px; /* Adjust padding for smaller screens */
+        height: 28px; /* Adjust height for smaller screens */
+        
+    }
+}
+
+.search-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    @media screen and (max-width: 768px) {
+        display: flex;
+        gap: 10px; /* Add space between stacked elements */
+        
+    }
+ 
+}
+.user-list-btn{
+    display: flex;
+    gap: 8px;
+
+}
+.icon-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+.action-btn1 button{
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(135deg, rgb(40, 167, 69), rgb(33, 136, 56));
+    border: none;
+    border-radius: 8px;
+    box-shadow: rgba(0, 128, 0, 0.3) 0px 4px 6px;
+    cursor: pointer;
+    transition: 0.3sease-in-out;
+    white-space: nowrap; /* Prevents text wrapping */
+    overflow: visible; /* Ensures full visibility */
+}
+.column-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+    flex-wrap: nowrap;
+
+
+}
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+th, td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-left: none !important;
+    border-right: none !important;
+    text-align: left;
+}
+
+.table-bottom-content{
+    display: flex;
+    gap:8px;
+    justify-content: center;
+    align-items: center;
+}
+.pagination-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    /* background: #f8f9fa; */
+    border-top: 1px solid #ddd;
+    font-size: 14px;
+    @media screen and (max-width: 768px) {
+        flex-direction: column; /* Stack elements on smaller screens */
+        align-items: flex-start; /* Align to the left */
+        gap: 5px; /* Add space between stacked elements */
+        
+    }
+}
+
+.pagination-container select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.pagination-controls {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.pagination-controls button {
+    border: none;
+    background: #e9ecef;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    @media screen and (max-width: 768px) {
+        padding: 4px 8px; /* Adjust padding for smaller screens */
+        font-size: 12px; /* Reduce font size for mobile */
+        
+    }
+}
+
+.pagination-controls button:hover {
+    background: #d6d8db;
+}
+
+/* Style only the selected page number button */
+.pagination-controls button.active {
+    background: #00b300 !important;
+    color: white;
+    font-weight: bold;
+}
+
+/* Disable previous and next buttons when needed */
+.pagination-controls button:disabled {
+    background: #ddd;
+    cursor: not-allowed;
+}
+/* Make the table container scrollable */
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    white-space: nowrap; /* Prevents text wrapping */
+    padding-bottom: 10px; /* Adds space to prevent clipping */
+}
+
+/* Ensure table has enough space */
+table {
+    min-width: 1300px; /* Adjust based on content */
+    width: max-content; /* Allows full content display */
+    border-collapse: collapse;
+}
+
+/* Fix last column cutting issue */
+th:last-child, td:last-child {
+    padding-right: 20px; /* Adds space to prevent buttons from being clipped */
+}
+thead {
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 2;
+}
+
+/* Ensure cells do not wrap text */
+th, td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.col-0 { width: 50px; }
+.col-1 { width: 150px; } /* Name */
+.col-2 { width: 200px; } /* Email */
+.col-3 { width: 150px; } /* Phone */
+.col-4 { width: 120px; } /* Country */
+.col-5 { width: 180px; } /* Wallet Balance */
+.col-6 { width: 150px; } /* IB Name */
+.col-7 { width: 130px; } /* MT5 ID */
+.col-8 { width: 180px; } /* Registration Date */
+.col-9 { width: 250px; } /* Action */
+.col-11 { width: 130px;}
+
+
+

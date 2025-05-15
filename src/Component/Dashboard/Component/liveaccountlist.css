@@ -1,0 +1,48 @@
+
+  
+  .account-list-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    padding: 10px;
+    overflow-x: auto; /* Allows horizontal scrolling */
+  white-space: nowrap; /* Prevents text wrapping */
+    /* margin: 0 auto; */
+    
+  }
+  
+  .account-list-container h1 {
+    color: #183153;
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    font-weight: 600;
+  }
+  
+  .account-list-container table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 100%;
+  }
+  
+ .account-list-container th {
+    background-color: #f9f9f9;
+    color: #183153;
+    font-weight: 600;
+    text-align: left;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    
+  }
+  
+.account-list-container  td {
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    color: #666;
+    text-align: center;
+  }
+  
+.dashboard-container  .no-data {
+    color: #999;
+    font-style: italic;
+  }
