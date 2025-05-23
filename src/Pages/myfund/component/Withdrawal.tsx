@@ -4,39 +4,50 @@ import bank from '../../../assets/bank.webp'
 import cashtransfer from '../../../assets/cashtransfer.webp'
 import onlinepayment from '../../../assets/onlinepayment.webp'
 import './deposit.css'
+import { useNavigate } from 'react-router-dom';
 
 const depositMethods = [
     {
       title: 'Bank',
       description: 'Deposit with bank transfer.',
       img: bank,
+      route: '/myfund/bankwithdrawal',
     },
     {
       title: 'Cash',
       description: 'Cash deposit.',
       img: cash,
+      route: '/myfund/cashdrawal',
     },
     {
       title: 'Domestic Bank Transfer',
       description: 'Deposit to domestic bank.',
       img: cashtransfer,
+      route: '/myfund/bankdeposit',
     },
     {
       title: 'Online',
       description: 'Online payment via stickpay.',
       img: onlinepayment,
+      route: '/myfund/onlinewithdrawal',
     },
   ];
-  
 
-const Withdrawal = () => {
+  
+  
+  const Withdrawal = () => {
+  const navigate = useNavigate();
+
+  const handleCardClick = (route: string) => {
+    navigate(route);
+  }
   return (
-    <div className="deposit-container">
-      <h2 className="deposit-title">Withdrawal</h2>
+    <div className="deposit-containerr">
+      <h2 className="deposit-title" style={{color:'#55da59'}}>Withdrawal</h2>
       <div className="deposit-grid">
         {depositMethods.map((method, index) => (
           <div className="deposit-card" key={index}>
-            <img src={method.img} alt={method.title} className="deposit-icon" />
+            <img src={method.img} alt={method.title} className="deposit-icon"  onClick={() => handleCardClick(method.route)} />
             <h3>{method.title}</h3>
             <p>{method.description}</p>
           </div>

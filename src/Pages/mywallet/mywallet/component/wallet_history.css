@@ -1,0 +1,147 @@
+.history-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 15px; /* Spacing between cards */
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ccc;
+    background-color: #fff;
+}
+
+.history-card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 0 0 5px #ccc;
+    border-radius: 8px;
+    width: 100%;
+    min-height: 100px;
+}
+
+.history-card-body p {
+    font-weight: 700;
+    font-size: 18px;
+    color: #000;
+}
+
+/* Responsive: Adjust for smaller screens */
+@media (max-width: 1024px) {
+    .history-cards {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 600px) {
+    .history-cards {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+}
+
+
+
+/* depositreport css */
+.depositreport-main1 .flex{
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+       
+        
+    }
+
+}
+.depositreport-main1 .status{
+    width: 100%;
+    @media screen and (max-width: 768px) {
+       
+        width: 100%;
+        
+    }
+}
+.withdrawal-report-main1 .flex{
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        
+    }
+}
+
+.ib-withdrawal-report-main1 .flex{
+    width: 100%;
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        
+    }
+}
+/* position report css */
+.historyreport-main1{
+    @media screen {
+        min-height: 1300px;
+        
+    }
+}
+.historyreport-main1 .flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .historyreport-main1 .flex > * {
+    flex: 1 1 30%; 
+  }
+  
+  @media screen and (max-width: 768px) {
+    .historyreport-main1 .flex {
+      flex-direction: column;
+    }
+  
+    .historyreport-main1 .flex > * {
+      width: 100%;
+      flex: 1 1 100%;
+    }
+  }
+  .filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.filter-group {
+  flex: 1 1 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-group label {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.filter-group input {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px) {
+  .filter-group {
+    flex: 1 1 48%;
+  }
+}
+
+  

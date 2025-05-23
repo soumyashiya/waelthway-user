@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './changemt5password.css'; // Link to the CSS file
+import { Button } from 'react-bootstrap';
 
 const Changemt5password = () => {
   const [mt5Id, setMt5Id] = useState('');
@@ -15,7 +16,7 @@ const Changemt5password = () => {
 
   return (
     <div className="container">
-      <h2 className="title">Change MT5 Password</h2>
+      <h2 className="title" style={{color:' #55da59'}}>Change MT5 Password</h2>
       <form className="form-box" onSubmit={handleSubmit}>
         <div className="form-row">
           <div className="form-group">
@@ -65,9 +66,16 @@ const Changemt5password = () => {
           </div>
         </div>
 
-        <button type="submit" className="submit-btn">
-          Submit Form
-        </button>
+        <Button
+                   type="submit"
+                   className="btn fw-bold px-5"
+                   style={{
+                     background: "linear-gradient(45deg, #32cd32, #00b300, #007f00)",
+                     border: "none",
+                   }}
+                 >
+                   Submit
+                 </Button>
       </form>
     </div>
   );

@@ -1,13 +1,48 @@
+/* .live-account-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.open-live-account-content{
+    padding-top: 90px;
+    padding-left: 15px;
+    
+
+} */
+
+
 .open-live-account-container{ 
     background: #e5e7eb;
+    padding: 80px 30px;
     width: 100%;
     /* padding: 80px 30px; */
-    margin-top: 20px;
+    /* margin-top: 20px; */
     height: auto;
    
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+     
     /* height: 100vh; */
 
 
+}
+.open-live-account-content h1{
+    font-size: 30px;
+    color: #55da59;
+    font-weight: 600;
+    
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        gap: 15px;
+        
+    }
 }

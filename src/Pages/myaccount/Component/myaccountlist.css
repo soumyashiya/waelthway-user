@@ -50,9 +50,9 @@
     align-items: center; /* Centers text and icon */
     gap: 6px; /* Adds space between icon and text */
     @media screen and (max-width: 768px) {
-        font-size: 12px; /* Further reduce font size for mobile */
-        padding: 4px 8px; /* Adjust padding for smaller screens */
-        height: 28px; /* Adjust height for smaller screens */
+        font-size: 12px; 
+        padding: 4px 8px; 
+        height: 28px; 
         
     }
 }
@@ -64,7 +64,9 @@
     margin-bottom: 20px;
     @media screen and (max-width: 768px) {
         display: flex;
-        gap: 10px; /* Add space between stacked elements */
+        flex-direction: column;
+        width: 100% !important;
+        gap: 20px; 
         
     }
  
@@ -72,6 +74,7 @@
 .user-list-btn{
     display: flex;
     gap: 8px;
+   
 
 }
 .icon-container{
@@ -91,8 +94,58 @@
     box-shadow: rgba(0, 128, 0, 0.3) 0px 4px 6px;
     cursor: pointer;
     transition: 0.3sease-in-out;
-    white-space: nowrap; /* Prevents text wrapping */
-    overflow: visible; /* Ensures full visibility */
+    white-space: nowrap; 
+    overflow: visible; 
+}
+.action-container {
+    display: flex;
+    justify-content: space-between; /* This pushes button to right */
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    min-width: 200px; /* Adjust based on your needs */
+}
+ 
+/* Icons row */
+.icon-row {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+ 
+/* Icons container */
+.action-icons {
+    display: flex;
+    gap: 12px;
+    flex-shrink: 0; /* Prevents icons from shrinking */
+}
+ 
+/* Promote button styling */
+.promote-btn {
+    padding: 6px 12px;
+    font-weight: 600;
+    font-size: 13px;
+    color: white;
+    background: linear-gradient(135deg, rgb(40, 167, 69), rgb(33, 136, 56));
+    border: none;
+    border-radius: 6px;
+    box-shadow: rgba(0, 128, 0, 0.2) 0px 2px 4px;
+    cursor: pointer;
+    white-space: nowrap;
+    margin-left: auto; /* Pushes button to right */
+    flex-shrink: 0; /* Prevents button from shrinking */
+}
+ 
+/* Icon styling */
+.action-icon {
+    color: #555;
+    cursor: pointer;
+    font-size: 16px;
+    transition: color 0.2s;
+}
+ 
+.action-icon:hover {
+    color: #32cd32;
 }
 .column-container{
     display: flex;

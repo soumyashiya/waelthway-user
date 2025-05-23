@@ -1,0 +1,180 @@
+.ibuser-viewuserlist{
+    padding: 80px 30px;
+    margin-top: 20px;    background: #e5e7eb;
+    width: 100%;
+    /* height: 100vh; */
+
+}
+.ibuser-viewuserlist h1{
+    font-size: 30px;
+    font-weight: bolder;
+    color: #55da59
+}
+
+
+
+
+ /* Parent container to align cards in a row */
+.ibuser-viewuserlist .viewuserlist-cards {
+    display: flex;
+    flex-wrap: wrap; 
+ justify-content: flex-start;
+ width: 100%;
+    gap: 16px; 
+    @media screen and (max-width: 768px) {
+        flex-direction: column; 
+        gap: 8px; 
+        width: 100%!important;
+        
+    }
+   
+}
+
+/* Wrapper for individual cards */
+.viewuser-dashboard-cards-wrapper {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(34, 197, 94, 0.6));
+width: calc(33.3% - 16px);
+    padding: 2px;
+    @media screen and (max-width: 768px) {
+        width: calc(100% - 16px); 
+        padding: 0px;
+        
+    }
+}
+
+/* Card body styling */
+.viewuser-dashboard-cards-wrapper .card-body {
+    border-radius: 8px;
+    background-color: white;
+    padding: 12px;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.viewuser-dashboard-cards-wrapper .user-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+@media screen and (max-width: 768px) {
+    .viewuserlist .user-list-btn {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); 
+      gap: 10px; /* spacing between buttons */
+    }
+  
+    .viewuserlist .user-list-btn .user-list-btns {
+      font-size: 14px !important;
+      white-space: nowrap;
+      padding: 7px !important;
+      width: 100%; 
+    }
+  }
+
+
+  /* viewusercards css */
+  .ibuser-dashboard-cards-wrapper{
+   
+    @media screen and (max-width: 768px) {
+       width: 100%;
+      
+        
+    }
+  }
+  .userview-dashboard-cards-wrapper .card-body{
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        text-align: center;
+        
+    }
+  }
+
+
+  /* ibdashboardchart */
+  .commission-cardd {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.03);
+  margin: 20px;
+}
+
+.commission-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937; 
+  margin-bottom: 20px;
+}
+
+
+.ibuser-dashboard-chart{
+     display: flex;
+    flex-direction: column;
+    width: 100%; /* Adjust as needed */
+    /* height: auto;  */
+    height: 430px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-top: 20px;
+
+}
+/* .Deposit-Withdrawals-left > * {
+    
+    width: 100%; 
+} */
+ .Deposit-Withdrawals-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 16px;
+  flex-wrap: wrap;
+}
+
+.deposit-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  padding: 80px;
+  flex: 0 1 600px; /* Takes up only necessary space, can shrink */
+}
+
+.deposit-card-wrapper > * {
+  width: 100%;
+}
+
+.deposit-right {
+  flex: 1; /* Takes up remaining space */
+  padding: 16px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+  min-width: 0; /* Important for overflow control */
+}
+
+/* Responsive: stack on smaller screens */
+@media screen and (max-width: 768px) {
+  .Deposit-Withdrawals-container {
+    flex-direction: column;
+  }
+
+  .deposit-card-wrapper,
+  .deposit-right {
+    width: 100%;
+  }
+}
+.depositreport-main1 .card-body h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+.depositreport-main1 p{
+    font-size: 20px;
+    font-weight: 700;
+    color: #888EA8;
+}

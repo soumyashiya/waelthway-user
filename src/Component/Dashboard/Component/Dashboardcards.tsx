@@ -40,7 +40,7 @@ const depositMethods = [
     return (
     <div className="dashboard-deposit-container">
       <h2 className="deposit-title"></h2>
-      <div className="deposit-grid">
+      <div className="deposit-gridd">
         {depositMethods.map((method, index) => (
           <div className="deposit-card" key={index}>
             <img src={method.img} alt={method.title} className="deposit-icon" onClick={navigateToAddCommission} />

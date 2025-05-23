@@ -1,26 +1,25 @@
 .account-wrapper{
     width: 100%;
     /* background-color: #e9ecf1; */
-    padding: 3rem 1rem;
     display: flex;
-    flex-direction: row;
     /* justify-content: center; */
+    
    
     /* flex-wrap: wrap; */
 }
-/* .account-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-} */
+
 
 .card-container {
+       padding:  30px;
+        display: flex;
+    justify-content: center;
+    gap: 5px; /* spacing between cards */
+    flex-wrap: wrap;
     width: 330px;
     background: #fff;
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    padding: 25px;
+        /* padding: 25px; */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
 }
@@ -66,6 +65,7 @@
 
 .card-btn {
     text-align: center;
+    width: 100%;
 }
 
 .card-btn button {
@@ -78,6 +78,12 @@
     font-weight: bold;
     cursor: pointer;
     transition: background 0.3s ease;
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        /* padding: 10px 0; */
+        padding: 8px;
+        
+    }
 }
 
 .card-btn button:hover {

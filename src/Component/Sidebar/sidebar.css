@@ -24,6 +24,9 @@
     transform: translateX(-100%); /* Slide out of view */
     width: 70px;
   }
+  .collapse-icon{
+    /* width: 30px */
+  }
 
   .sidebar-logo,
   .sidebar-logo1,

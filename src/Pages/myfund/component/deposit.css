@@ -1,9 +1,15 @@
-.deposit-container {
+.deposit-containerr {
     padding: 80px 30px;
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9; */
     font-family: 'Segoe UI', sans-serif;
     width: 100%;
     margin-top: 20px;
+    
+    @media screen and (max-width: 768px) {
+     height: auto;
+      
+    }
+   
   }
   
   .deposit-title {
@@ -13,11 +19,19 @@
     margin-bottom: 20px;
   }
   
-  .deposit-grid {
+  .deposit-containerr .deposit-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+    grid-template-columns: repeat(3, 1fr); 
+  
     gap: 20px;
+   
     /* padding: 20px; */
+    @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(1, 1fr); 
+      
+    }
+   
+    
   }
   
   .deposit-card {
@@ -26,8 +40,10 @@
     padding: 24px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     text-align: center;
-    flex: 1 1 calc(25% - 20px);
+    /* flex: 1 1 calc(25% - 20px); */
+    width: 100%;
     transition: transform 0.3s ease;
+   
   }
   .deposit-card img{
     max-width: 100%;
@@ -54,4 +70,44 @@
     font-size: 14px;
     color: #555;
   }
-  
+
+
+
+  /* bank deposit */
+
+  .custom-file-input {
+  background-color: #5e6bf7; 
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.file-input::file-selector-button {
+  background-color: #5e6bf7;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px 0 0 5px;
+  cursor: pointer;
+}
+
+.file-input:hover::file-selector-button {
+  background-color: #4c59d8;
+}
+
+
+/* online deposit */
+.submit-btn {
+  background-color: #10c143;
+  border: none;
+  padding: 10px 30px;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
